@@ -338,6 +338,89 @@ footer {
     line-height: 1.8;
 }
 
+.vespa-banner-two {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background:
+        url("IG/Banner\ Full\ Image\ with\ Description\ -\ Vespa\ 946\ Horse\ -\ Desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.65)
+    );
+}
+
+/* CONTENT */
+
+.banner-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    max-width:850px;
+    padding:20px;
+
+    animation:bannerFade 1.5s ease;
+}
+
+.banner-content h1{
+    font-size:5rem;
+    font-family:'Playfair Display', serif;
+    margin-bottom:20px;
+    letter-spacing:2px;
+    text-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.banner-content p{
+    font-size:1.3rem;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:#f3f3f3;
+}
+
+/* ANIMATION */
+
+@keyframes bannerFade{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .banner-content h1{
+        font-size:3rem;
+    }
+
+    .banner-content p{
+        font-size:1rem;
+    }
+
+    .vespa-banner{
+        height:75vh;
+    }
+}
+
 /* KEYFRAMES */
 
 @keyframes scrollLeft {
