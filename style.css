@@ -478,6 +478,30 @@ footer {
     transform: scale(1.05);
 }
 
+.card-content a{
+    display:inline-block;
+    width:260px;
+    text-align:center;
+    padding:14px 0;
+
+    border:2px solid white;
+    border-radius:40px;
+
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+
+    transition:0.4s;
+}
+
+.card-content a:hover{
+    background:white;
+     color:black;
+}
+
+.lifestyle-card:hover img{
+    transform:scale(1.05);
+}
 
 /* READY TO WEAR SECTION */
 
